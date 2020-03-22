@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-calculator',
@@ -6,57 +6,60 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent implements OnInit {
+
+  // define variable
   currentNumber = '0';
   firstOperand = null;
   operator = null;
   waitForSecondNumber = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  public getNumber(v: string){
+  // get current number
+  public getNumber(v: string) {
     console.log('variable', v);
-    if (this.waitForSecondNumber)
-    {
+    if (this.waitForSecondNumber) {
       this.currentNumber = v;
       this.waitForSecondNumber = false;
     } else {
-      this.currentNumber === '0'? this.currentNumber = v: this.currentNumber += v;
+      this.currentNumber === '0' ? this.currentNumber = v : this.currentNumber += v;
 
     }
   }
 
-  getDecimal(){
-    if(!this.currentNumber.includes('.')){
-        this.currentNumber += '.'; 
+  // append decimal point to number
+  getDecimal() {
+    if (!this.currentNumber.includes('.')) {
+      this.currentNumber += '.';
     }
   }
 
-  private doCalculation(op: any , secondOp: any){
-    switch (op){
+  // Switch statement used to return the result of different operations depending on the operand used
+  private doCalculation(op: any, secondOp: any) {
+    switch (op) {
       case '+':
-      return this.firstOperand += secondOp; 
-      case '-': 
-      return this.firstOperand -= secondOp; 
-      case '*': 
-      return this.firstOperand *= secondOp; 
-      case '/': 
-      return this.firstOperand /= secondOp; 
+        return this.firstOperand += secondOp;
+      case '-':
+        return this.firstOperand -= secondOp;
+      case '*':
+        return this.firstOperand *= secondOp;
+      case '/':
+        return this.firstOperand /= secondOp;
       case '=':
-      return secondOp;
+        return secondOp;
     }
   }
 
-  public getOperation(op: string){
+  public getOperation(op: string) {
     console.log('operand', op);
 
-    if(this.firstOperand === null){
+    if (this.firstOperand === null) {
       this.firstOperand = Number(this.currentNumber);
 
-    } else if (this.operator){
-      const result = this.doCalculation(this.operator , Number(this.currentNumber))
+    } else if (this.operator) {
+      const result = this.doCalculation(this.operator, Number(this.currentNumber))
       this.currentNumber = String(result);
       this.firstOperand = result;
     }
@@ -67,7 +70,8 @@ export class CalculatorComponent implements OnInit {
 
   }
 
-  public clear(){
+  // clear display and operands
+  public clear() {
     this.currentNumber = '0';
     this.firstOperand = null;
     this.operator = null;

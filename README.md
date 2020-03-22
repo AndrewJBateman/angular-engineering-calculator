@@ -1,27 +1,73 @@
-# AngularEngineeringCalculator
+# Angular Engineering Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+* App to do simple arithmetic calculations.
+* Tutorial code from [Ahmed Bouchefra, TechieDiaries: Angular 9 Tutorial and Example: Build your First Angular App](https://www.techiediaries.com/angular/angular-9-tutorial-and-example/) to be expanded into a more complex calculator with Engineering functions.
 
-## Development server
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Table of contents
 
-## Code scaffolding
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## General info
 
-## Build
+* Calculator created in HTML and CSS, using html from a [jsfiddle by Ayo Isaiah](http://jsfiddle.net/ayoisaiah/c8b9zsaq/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Screenshots
 
-## Running unit tests
+![Example screenshot](./img/calc.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies
 
-## Running end-to-end tests
+* [Angular v9.0.5](https://angular.io/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Setup
 
-## Further help
+* Install dependencies using `npm i`
+* Run `ng serve` to get a server at `http://localhost:4200/`
+* If required, run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Code Examples
+
+* Switch statement used to return the result of different operations depending on the operand used
+
+```typescript
+  private doCalculation(op: any, secondOp: any) {
+    switch (op) {
+      case '+':
+        return this.firstOperand += secondOp;
+      case '-':
+        return this.firstOperand -= secondOp;
+      case '*':
+        return this.firstOperand *= secondOp;
+      case '/':
+        return this.firstOperand /= secondOp;
+      case '=':
+        return secondOp;
+    }
+  }
+```
+
+## Features
+
+* Angular event binding used to bind the `getNumber()` method to the button `(click)` DOM event
+
+## Status & To-Do List
+
+* Status: Working
+* To-Do: Add engineering functions
+
+## Inspiration
+
+[Ahmed Bouchefra, TechieDiaries: Angular 9 Tutorial and Example: Build your First Angular App](https://www.techiediaries.com/angular/angular-9-tutorial-and-example/),
+
+## Contact
+
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
