@@ -35,7 +35,7 @@
 
 * Install dependencies using `npm i`
 * Run `ng serve` to get a server at `http://localhost:4200/`
-* If required, run `ng build` to build the project. The build artifacts will be stored in the `docs /` directory. Use the `--prod` flag for a production build.
+* If required, run `ng build` to build the project. The build artifacts will be stored in the `docs` directory. Use the `--prod` flag for a production build.
 
 ## :computer: Code Examples
 
