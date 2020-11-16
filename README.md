@@ -29,7 +29,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 
 ## :floppy_disk: Setup
 
