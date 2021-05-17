@@ -69,12 +69,12 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
+* Status: Working. Updated may 2021
 * To-Do: Add engineering functions
 
 ## :clap: Inspiration
 
-[Ahmed Bouchefra, TechieDiaries: Angular 9 Tutorial and Example: Build your First Angular App](https://www.techiediaries.com/angular/angular-9-tutorial-and-example/),
+* [Ahmed Bouchefra, TechieDiaries: Angular 9 Tutorial and Example: Build your First Angular App](https://www.techiediaries.com/angular/angular-9-tutorial-and-example/),
 
 ## :file_folder: License
 
