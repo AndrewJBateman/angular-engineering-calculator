@@ -34,7 +34,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/)
+* [Angular v13](https://angular.io/)
 
 ## :floppy_disk: Setup
 
@@ -69,7 +69,7 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Updated may 2021
+* Status: Working.
 * To-Do: Add engineering functions
 
 ## :clap: Inspiration
