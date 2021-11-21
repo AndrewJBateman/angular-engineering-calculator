@@ -1,1 +1,0 @@
-{"version":3,"file":"styles.css","mappings":";;;AAAA;EACE,gBAAgB;EAChB,sBAAsB;AACxB;;AAEA;EACE,SAAS;EACT,UAAU;EACV,mBAAmB;AACrB,E","sources":["./src/styles.css"],"sourcesContent":["html {\r\n  font-size: 62.5%;\r\n  box-sizing: border-box;\r\n}\r\n\r\n*, *::before, *::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: inherit;\r\n} "],"names":[],"sourceRoot":"webpack:///"}
