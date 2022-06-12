@@ -123,6 +123,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-engineering-calculator"
+    }
+  }
 }
