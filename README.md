@@ -34,12 +34,12 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v14](https://angular.io/)
+* [Angular v15](https://angular.io/)
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
-* Run `npm start` to get a server at `http://localhost:4200/`
+* Run `ng serve` to get a server at `http://localhost:4200/`
 * Run `npm run build` to build the project. The build artifacts will be stored in the `docs` directory.
 
 ## :computer: Code Examples
